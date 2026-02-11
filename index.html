@@ -11,12 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="tailwindinit.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header class="container mx-auto grid grid-cols-2">
-      <div class="p-2 space-y-8 ">
-        <h2 class="text-[60px] font-semibold">
+      <div class="p-2 space-y-7 ">
+        <h2 class="text-[80px] font-extrabold leading-tight ">
           It's good <br />tea time at The <br />Tea House
         </h2>
         <p class="text-[#777777]">
@@ -24,12 +25,12 @@
           Satisfaction To Your Taste Buds.
         </p>
         <button class="flex p-2 text-white bg-linear-65 from-purple-500 to-pink-500">
-          Explore More <img class="w-8 h-8" src="./images/arrow.png" alt="" />
+          Explore More <img class="w-6 h-6" src="./images/arrow.png" alt="" />
         </button>
       </div>
       <div class="relative">
         <img src="./images/banner.png" alt="" />
-        <div class="flex bg-white border-2 border-black absolute p-2 bottom-8 left-35">
+        <div class="flex bg-white shadow-xl absolute p-2 bottom-8 left-35">
             <div class="flex items-center justify-center">
                 <img src="./images/star.png" alt="">
             </div>
@@ -37,7 +38,46 @@
                 <h2 class="font-bold text-2xl">5.00</h2>
                 <p class="text-[#777777]">Trust Pilot Ratings</p>
             </div>
-        </div>
+      </div>
     </header>
+    <main>
+      <section class="card container mx-auto">
+        <div class="text-center pb-5">
+          <h2 class="text-[45px] font-bold">Our Featured Products</h2>
+          <p class="text-[#777777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br>by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+        <div class="space-x-6 grid grid-cols-4">
+          <!-- card container -->
+           <div class=" bg-[#f4f4f4] rounded-[10px] text-center flex flex-col justify-center items-center align-middle p-7 space-y-7">
+            <div class="">
+              <img src="./images/tea-1.png" alt="">
+            </div>
+            <h2 class="font-bold">Milk Tea</h2>
+            <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+           </div>
+           <div class=" bg-[#f4f4f4] rounded-[10px] text-center flex flex-col justify-center items-center align-middle p-7 space-y-7">
+            <div class="">
+              <img src="./images/tea-2.png" alt="">
+            </div>
+            <h2 class="font-bold">Black Tea</h2>
+            <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+           </div>
+           <div class=" bg-[#f4f4f4] rounded-[10px] text-center flex flex-col justify-center items-center align-middle p-7 space-y-7">
+            <div class="">
+              <img src="./images/tea-3.png" alt="">
+            </div>
+            <h2 class="font-bold">Lemon Tea</h2>
+            <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+           </div>
+           <div class=" bg-[#f4f4f4] rounded-[10px] text-center flex flex-col justify-center items-center align-middle p-7 space-y-7">
+            <div class="">
+              <img src="./images/tea-4.png" alt="">
+            </div>
+            <h2 class="font-bold">Green Tea</h2>
+            <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+           </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
